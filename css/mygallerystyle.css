@@ -1,0 +1,38 @@
+.images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image{
+  width:400px;
+  height:400px;
+  margin: 2px;
+  text-align: center;
+  z-index:0;
+}
+.image > img{
+  height: 100%;
+}
+.image-selected{
+  border: 1px solid black;
+  background-color: white;
+}
+.image-selected > img{
+  opacity: 0.5;
+}
+.image-magnified{
+  z-index: 1;
+}
+.image-magnified > img{
+  width: 600px;
+  height: 600px;
+  opacity: 0.95;
+}
+
+h1{
+  text-align: center;
+}
+
+input{
+  text-align: center;
+  width: 200px;
+}
